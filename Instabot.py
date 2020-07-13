@@ -31,8 +31,12 @@ class fbot:
 # New Function
     def get_unfollow(self): 
         
+#for profile icon
+        self.driver.find_element_by_xpath("/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[5]/span/img")\
+            .click()
+        sleep(2)
 #for profile
-        self.driver.find_element_by_xpath("/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[5]/a")\
+        self.driver.find_element_by_xpath("/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[5]/div[2]/div/div[2]/div[2]/a[1]/div/div[2]/div/div/div/div")\
             .click()
         sleep(2)
 #for followers
